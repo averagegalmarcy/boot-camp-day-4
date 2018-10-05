@@ -10,13 +10,13 @@ function handleSubmit(event) {
 
     var correct = 2; 
     if (guess == correct) {
-        result.textContent='You are correct!'; 
+        result.textContent ='You are correct!'; 
     }
     else if (guess > 2) {
         result.textContent= 'Too high!';
     }
     else {
-        result.textContent= 'Too low!';
+       result.textContent= 'Too low!';
     }
     //if equal -> correct! 
     //else if less than -> too low! 
