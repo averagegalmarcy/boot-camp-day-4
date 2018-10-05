@@ -5,20 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="main.css">
-    <title>Apps FTW!</title>
+    <title>Order Some Pizza</title>
 </head>
 <body>
-    <h1> Apps FTW!</h1>
- <form onsubmit="return handleSubmit(event),false;">
-    <p>
+    <h1> Order Some Pizza</h1>
+ <form onsubmit="event.preventDefault();handleSubmit(event),false;">
+    <p> 
         <label>
-            How many animals do I have?
-        <input name="guess" type="number">
+            <input  value= "olives" name="toppings" type="checkbox"> Olives 
+        </label>        
+        <label> 
+            <input  value ="pepperoni" name="toppings" type="checkbox"> pepperoni
         </label>
+        <label>
+            <input  value="mushroom" name="toppings" type="checkbox"> mushrooms
+        </label>
+        <label>
+            <input  value="peppers" name="toppings" type="checkbox"> peppers
+        </label>
+        
     </p>
-    <button> Submit </button>
+    <button> Order </button>
 </form>
-<p id ="result">Make a guess!</p>
+<p id ="result">Pizza has been submitted!</p>
     <script src="index.js"></script>
 </body>
 </html>
